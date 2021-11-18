@@ -12,9 +12,15 @@ document.getElementById("player2_score").innerHTML = player2_score;
 document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name;
 document.getElementById("player_answer").innerHTML = "Answer Turn - " + player2_name;
 
-function send() {
+function check() {
 
     number1 = document.getElementById("number1").value;
     number2 = document.getElementById("number2").value;
     answer = number1*number2;
+    console.log(result);
+
+    document.getElementById("number1").value = "";
+    document.getElementById("number2").value = "";
+
+    
 }
